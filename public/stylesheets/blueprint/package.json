@@ -1,0 +1,88 @@
+{
+  "_args": [
+    [
+      "blueprint-css@next",
+      "/home/infibeam/Documents/rails_tutorial/sample_app"
+    ]
+  ],
+  "_from": "blueprint-css@next",
+  "_id": "blueprint-css@3.0.0-beta.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/blueprint-css",
+  "_nodeVersion": "9.6.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/blueprint-css_3.0.0-beta.0_1520045065008_0.0983472287619751"
+  },
+  "_npmUser": {
+    "email": "cory@coryrylan.com",
+    "name": "splintercode"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "blueprint-css",
+    "raw": "blueprint-css@next",
+    "rawSpec": "next",
+    "scope": null,
+    "spec": "next",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/blueprint-css/-/blueprint-css-3.0.0-beta.0.tgz",
+  "_shasum": "e5558337afacc1f1f8627252dc4a2e8ef9de63c7",
+  "_shrinkwrap": null,
+  "_spec": "blueprint-css@next",
+  "_where": "/home/infibeam/Documents/rails_tutorial/sample_app",
+  "author": {
+    "name": "Cory Rylan"
+  },
+  "bugs": {
+    "url": "https://github.com/coryrylan/blueprint-css/issues"
+  },
+  "dependencies": {},
+  "description": "Blueprint CSS, Responsive CSS Layout Library",
+  "devDependencies": {
+    "backstopjs": "^3.1.19",
+    "node-sass": "^4.7.2",
+    "sass-lint": "^1.10.2"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 23,
+    "integrity": "sha512-V9rLWZqufsu1ZEtqxs5WagWn+k7s3kiKyrYnIHjkoNVqXDpA1PAvmhLe6g8t+ct9VZl2JjspaZ0XqVCNJSyosA==",
+    "shasum": "e5558337afacc1f1f8627252dc4a2e8ef9de63c7",
+    "tarball": "https://registry.npmjs.org/blueprint-css/-/blueprint-css-3.0.0-beta.0.tgz",
+    "unpackedSize": 106362
+  },
+  "homepage": "https://blueprintcss.io",
+  "license": "MIT",
+  "main": "blueprint.css",
+  "maintainers": [
+    {
+      "name": "splintercode",
+      "email": "cory@coryrylan.com"
+    }
+  ],
+  "name": "blueprint-css",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coryrylan/blueprint-css.git"
+  },
+  "scripts": {
+    "approve": "backstop approve",
+    "build": "npm run clean && npm run build:latest && npm run build:fallback && npm run build:legacy",
+    "build:fallback": "node-sass --include-path scss src/fallback/blueprint.scss dist/fallback/blueprint.css && node-sass --include-path scss src/fallback/blueprint.scss dist/fallback/blueprint.min.css --output-style compressed",
+    "build:latest": "node-sass --include-path scss src/blueprint.scss dist/blueprint.css && node-sass --include-path scss src/blueprint.scss dist/blueprint.min.css --output-style compressed",
+    "build:legacy": "node-sass --include-path scss src/v2/blueprint.scss dist/v2/blueprint.css && node-sass --include-path scss src/v2/blueprint.scss dist/v2/blueprint.min.css --output-style compressed",
+    "clean": "rm -rf dist",
+    "lint": "sass-lint -v -q",
+    "test": "backstop test"
+  },
+  "version": "3.0.0-beta.0"
+}
